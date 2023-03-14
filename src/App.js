@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Switch,Router, Route, BrowserRouter } from 'react-router-dom';
+import Carrusel from './carrusel/Carrusel';
+import Cafe from './carta/Cafe';
+import Carta from './carta/Carta';
+import Inicio from './inicio/Inicio.js';
 
-function App() {
+
+
+const EnrutadorDeApp = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <BrowserRouter>
+      <Inicio/>
+      <Switch>
+        <Route path="/" component={Carrusel} exact={true}/>
+        <Route path="/carta" component={Carta} />
+        <Route path="/cafeteria" component={Cafe}/>
+      </Switch>
+    </BrowserRouter>
 
-export default App;
+
+  );
+};
+
+export default EnrutadorDeApp;
