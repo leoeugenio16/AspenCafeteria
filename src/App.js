@@ -1,20 +1,24 @@
 import React from 'react';
 import { Switch,Router, Route, BrowserRouter } from 'react-router-dom';
-import Carrusel from './carrusel/Carrusel';
 import Cafe from './carta/Cafe';
 import Carta from './carta/Carta';
-import Inicio from './inicio/Inicio.js';
+import NavBar from './navbar/NavBar.js';
+import Promociones from './promociones/Promociones';
+import Inicio from './inicio/Inicio.js'
+import Nosotros from './nosotros/Nosotros';
 
 
 
 const EnrutadorDeApp = () => {
   return (
     <BrowserRouter>
-      <Inicio/>
+      <NavBar/>
       <Switch>
-        <Route path="/" component={Carrusel} exact={true}/>
+        <Route path="/" component={Inicio} exact={true}/>
         <Route path="/carta" component={Carta} />
         <Route path="/cafeteria" component={Cafe}/>
+        <Route path="/promociones" component={Promociones}/>
+        <Route path="/nosotros" component={Nosotros}/>
       </Switch>
     </BrowserRouter>
 

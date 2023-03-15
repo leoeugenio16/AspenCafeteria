@@ -1,7 +1,10 @@
 /*ESTILOS DE NAVBAR*/
 .navbar{
     background-color: rgb(94, 46, 7);
-    color: #000;
+    
+}
+.nav-link{
+    color: #fffffe !important;
 }
 .me-auto{
     margin-left: 20%;
@@ -13,6 +16,33 @@
 .icono{
     width: 20vh;
     right: auto;
+}
+/*ESTILOS NOSOTROS*/
+.div-nosotros{
+    background-image: url('./imagenes/ADENTRO.jpeg');
+    background-repeat: no-repeat;
+    display: flexbox;
+    align-items: center;
+    font-size: 100%;
+    color: rgb(14, 14, 14);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    padding: 2%;
+
+}
+@media only screen and (max-device-width: 600px) {
+    .div-nosotros{
+        background-image: url('./imagenes/ADENTROCOPIA.jpeg');
+        font-size: 150%;
+        background-repeat: repeat;
+    }
+}
+.logoNuevo{
+    display: block;
+    margin: auto;
+    width: 30%;
+    right: auto;
+    align-items: center;
 }
 
 /*ESTILOS DE CARTA*/
@@ -79,6 +109,7 @@
     .cafeChicoYgrande{
         display: flex;
         background-image: url('./imagenes/fondo-carta.jpg');
+        justify-content: center;
     }
     .lista-cafe{
         display: flex;
