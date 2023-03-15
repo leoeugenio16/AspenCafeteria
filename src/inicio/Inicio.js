@@ -1,4 +1,4 @@
-import fachada from '../imagenes/FACHADA.jpeg'
+import fachada from '../imagenes/INICIO/FACHADA.jpeg'
 
 const Inicio=()=>{
     return(

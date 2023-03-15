@@ -1,4 +1,4 @@
-import Cafeteria from "../imagenes/CAFETERIA.png";
+
 import Col from "react-bootstrap/Col";
 import ListGroup from "react-bootstrap/ListGroup";
 import Row from "react-bootstrap/Row";
@@ -16,12 +16,13 @@ import Mocaccino from "../imagenes/CAFE/MOCACCINO.jpg";
 import Capuccino from "../imagenes/CAFE/CAPUCCINO.jpeg";
 import Submarino from "../imagenes/CAFE/SUBMARINO.jpg";
 import Te from "../imagenes/CAFE/TE.jpg";
+import dulce from '../imagenes/DULCE/DULCE.png'
 
 const Dulce = () => {
   return (
     <div>
       <div class="div-cafe">
-        <img class="img-cafe" src={Cafeteria} />
+        <img class="img-cafe" src={dulce} />
       </div>
       <Tab.Container id="list-group-tabs-example" defaultActiveKey="#link1">
         <Row bsPrefix="lista-cafe">

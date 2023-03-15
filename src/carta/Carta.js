@@ -1,9 +1,9 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import cafe from '../imagenes/cafe.jpeg';
-import bebida from '../imagenes/bebidas.jpg';
-import merienda from '../imagenes/merienda.jpeg'
-import dulces from '../imagenes/dulces.jpeg'
+import cafe from '../imagenes/CARTA/cafe.jpeg';
+import bebida from '../imagenes/CARTA/bebidas.jpg';
+import merienda from '../imagenes/CARTA/merienda.jpeg'
+import dulces from '../imagenes/CARTA/dulces.jpeg'
 import { CardGroup } from 'react-bootstrap';
 import Row from 'react-bootstrap/Row';
 
