@@ -25,7 +25,7 @@ const Carta = () => {
                     </Card.Body>
                 </Card>
                 <Card style={{ width: '100%' }}>
-                    <Card.Img variant="top" src={bebida} />
+                    <Card.Img variant="top"  src={bebida} />
                     <Card.Body>
                         <Card.Title>BEBIDAS</Card.Title>
                         <Card.Text>
@@ -34,7 +34,7 @@ const Carta = () => {
                             </b>
 
                         </Card.Text>
-                        <Button variant="primary">VER</Button>
+                        <Button variant="primary" href='/bebidas'>VER</Button>
                     </Card.Body>
                 </Card>
                 <Card style={{ width: '100%' }}>
@@ -47,7 +47,7 @@ const Carta = () => {
                             </b>
 
                         </Card.Text>
-                        <Button variant="primary">VER</Button>
+                        <Button variant="primary" href='/desayunoMerienda'>VER</Button>
                     </Card.Body>
                 </Card>
                 <Card style={{ width: '100%' }}>
@@ -60,7 +60,7 @@ const Carta = () => {
                             </b>
 
                         </Card.Text>
-                        <Button variant="primary">VER</Button>
+                        <Button variant="primary" href='/dulce'>VER</Button>
                     </Card.Body>
                 </Card>
             </Row>
